@@ -1,4 +1,4 @@
-%% Init params
+%% Parameters
 
 m = 0.1;
 r = 0.05;
@@ -58,6 +58,7 @@ hold off;
 grid on;
 legend('Original System', 'Reduced-Order 2 System', 'Reduced-Order 1 System');
 ylabel('\theta (rad)');
+title('Response');
 
 % Input Voltage
 subplot(2, 1, 2);
@@ -65,5 +66,4 @@ plot(T, U, '-r', 'LineWidth', 2);
 grid on;
 xlabel('Time (s)');
 ylabel('Voltage (V)');
-
-title('Response Comparison');
+title('Input');
