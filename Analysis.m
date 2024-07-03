@@ -40,7 +40,7 @@ rsys1 = getrom(red, 'Order', reducedOrder);
 figure;
 
 % 12V for the first second and 0V afterwards
-T = 0:0.1:5;
+T = 0:0.1:3;
 U = (T <= 1)*12;
 
 % Simulate the 3 systems
@@ -66,4 +66,4 @@ grid on;
 xlabel('Time (s)');
 ylabel('Voltage (V)');
 
-title('Impulse Response Comparison');
+title('Response Comparison');
